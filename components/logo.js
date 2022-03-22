@@ -10,7 +10,7 @@ display: inline-flex;
 }
 `
 const Logo = () => {
-  const logoImg = `/images/logo_rojo.png`
+  const logoImg = `/images/Logo_rojo.png`
   return (
     <Link href="/">
         <LogoBox>

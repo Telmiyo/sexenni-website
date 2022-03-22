@@ -72,7 +72,7 @@ const Page = () => {
               fontSize='4xl'
               fontWeight='extrabold'
             >
-              Redes Sociales
+              Xarxes Socials
             </Heading>
             <HStack direction={'row'}>
               <Link href="https://www.instagram.com/sexenni/" target="_blank">
