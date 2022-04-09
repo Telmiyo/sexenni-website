@@ -9,7 +9,6 @@ import {
   Grid,
 } from "@chakra-ui/react"
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
