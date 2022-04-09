@@ -28,7 +28,7 @@ const Page = () => {
       >
 
         {/*HERO*/}
-        <Box
+        {/* <Box
           w={'full'}
           h={'100vh'}
           mb={8}
@@ -42,7 +42,7 @@ const Page = () => {
         //  display="flex"
           //flexGrow={5}
           >
-        </Box>
+        </Box> */}
         {/*TICKET & T-SHIRT*/}
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
         <Link href='https://mutick.com/e/concert-presentacio-sexenni' target="_blank">
