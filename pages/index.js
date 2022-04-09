@@ -7,6 +7,7 @@ import {
   Flex,
   HStack,
   Grid,
+  GridItem,
 } from "@chakra-ui/react"
 import Layout from '../components/layouts/article'
 import {
@@ -15,7 +16,7 @@ import {
   IoLogoYoutube
 
 } from 'react-icons/io5'
-import { DiscGridItem } from "../components/layouts/griditem"
+import { DiscGridItem, ProductGridItem } from "../components/layouts/griditem"
 
 const Page = () => {
   return (
@@ -39,24 +40,65 @@ const Page = () => {
           backgroundColor="blackAlpha.300"
           flexBasis={'auto'}
           display="flex"
-          flexGrow={5}
-          _hover={{
-            opacity: '50%'
-          }}>
+          flexGrow={5}>
         </Box>
+        {/*TICKET & T-SHIRT*/}
+        <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
+        <Link href='https://mutick.com/e/concert-presentacio-sexenni' target="_blank">
+          <Button
+          w={300}
+          variant="outline"
+          colorScheme='dark'
+          boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'}
+          >
+            Aquí
+          </Button>
+        </Link>
+
+        <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>🚀 Noves Samarretes Disponibles </Heading>
+        <ProductGridItem src={'/images/contents/t-shirt-sexenni.jpeg'} name={'Retrats - Negre'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
+
+            {/*DISCOGRAPHY*/}
+        <Heading mt={20} as='h2' fontSize={'xl'} textColor='red'>DISCOGRAFIA</Heading>
+        <Grid
+          direction="row"
+          gap={20}
+          mx={10}
+          align='center'
+        >
+          <GridItem colSpan={2}>
+            <DiscGridItem src={'/images/songs/retrats-portada.jpeg'} name={'Retrats - Nou Disc'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
+          </GridItem>
+          <GridItem colSpan={1}>
+            <DiscGridItem src={'/images/songs/sexenni-de-lao-portada.jpeg'} name={'De Lao - Retrats'} link='https://open.spotify.com/track/0TxI8urtmxp3i6mp4noOa0?si=e1632099d1a24899' />
+          </GridItem>
+
+          <GridItem colSpan={1}>
+            <DiscGridItem src={'/images/songs/sexenni-la-canco-dels-strokes-portada.png'} name={'La Cançó Dels Strokes - Retrats'} link='https://open.spotify.com/track/5qIMctLz6l24wBwwnDPB0O?si=9b2eb1b3a7f34e2d' />
+          </GridItem>
+
+          <GridItem colSpan={2}>
+            <DiscGridItem src={'/images/songs/sexenni-el-puma-portada.png'} name={'El Puma - Single'} link='https://open.spotify.com/album/57OjOMxljBzzop1lBUpVFQ?si=zBHIZ4iZQ6aTVyfBghzDIA' />
+          </GridItem>
+
+          <GridItem colSpan={2}>
+            <DiscGridItem src={'/images/songs/no-ho-sabia-portada.jpeg'} name={'No Ho Sabia - Single'} link='https://open.spotify.com/album/4t9XNHO9klYSOLxR3duOjP?si=kNCaZ0vuQy2sq803UknnHQ' />
+          </GridItem>
+
+        </Grid>
         {/*Social Links*/}
         <Heading
           textColor={'red'}
-          fontSize= {'4xl'}
+          fontSize={'4xl'}
           fontWeight='extrabold'
           display="flex"
-          my ={20}
+          mt={20}
 
           flexGrow={2}
         >
           Xarxes Socials
         </Heading>
-        <HStack alignItems={'center'} flexGrow={1}>
+        <HStack mx={10} my={10} lignItems={'center'} flexGrow={1}>
           {/*Instagram*/}
           <Link href="https://www.instagram.com/sexenni/" target="_blank">
             <Button _hover={{ bgGradient: 'linear(to-bl, pink.200 0%, #e3e3e3 95%)' }} variant="ghost" colorScheme={'black'} leftIcon={<Icon as={IoLogoInstagram} />}>
@@ -77,17 +119,6 @@ const Page = () => {
           </Link>
 
         </HStack>
-        <Grid
-          direction="row"
-          gap={20}
-          my={20}
-        >
-          <DiscGridItem src={'/images/songs/retrats-portada.jpeg'} name={'Retrats - Nou Disc'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
-          <DiscGridItem src={'/images/songs/no-ho-sabia-portada.jpeg'} name={'No Ho Sabia'} link='https://open.spotify.com/album/4t9XNHO9klYSOLxR3duOjP?si=kNCaZ0vuQy2sq803UknnHQ' />
-          <DiscGridItem src={'/images/songs/sexenni-el-puma-portada.png'} name={'El Puma'} link='https://open.spotify.com/album/57OjOMxljBzzop1lBUpVFQ?si=zBHIZ4iZQ6aTVyfBghzDIA' />
-          <DiscGridItem src={'/images/songs/sexenni-mama-portada.jpeg'} name={'Mama'} link='https://open.spotify.com/album/57OjOMxljBzzop1lBUpVFQ?si=zBHIZ4iZQ6aTVyfBghzDIA' />
-
-        </Grid>
 
       </Flex>
     </Layout>
