@@ -12,8 +12,8 @@ const Main = ({ children, router }) => {
             </Head>
             <Box>
                 <Navbar path={router.asPath} />
-                <Container maxW="container.xl" pt={50}>
-                </Container>
+                <Container alignItems={'center'} maxW="container.xl" pt={50}>
+                </Container >
                 {children}
                 <Footer />
             </Box>

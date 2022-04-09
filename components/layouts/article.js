@@ -26,7 +26,7 @@ const Layout = ({ children, title }) => (
           <meta property="og:title" content={title} />
         </Head>
       )}
-				<Box >
+				<Box mt={8}>
       {children}
 						</Box>
 
