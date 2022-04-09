@@ -38,9 +38,10 @@ const Page = () => {
           backgroundSize={'cover'}
           backgroundPosition={'center'}
           backgroundColor="blackAlpha.300"
-          flexBasis={'auto'}
-          display="flex"
-          flexGrow={5}>
+          //flexBasis={'auto'}
+        //  display="flex"
+          //flexGrow={5}
+          >
         </Box>
         {/*TICKET & T-SHIRT*/}
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
@@ -66,7 +67,7 @@ const Page = () => {
           mx={10}
           align='center'
         >
-          <GridItem colSpan={2}>
+          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/retrats-portada.jpeg'} name={'Retrats - Nou Disc'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
           </GridItem>
           <GridItem colSpan={1}>
@@ -77,11 +78,11 @@ const Page = () => {
             <DiscGridItem src={'/images/songs/sexenni-la-canco-dels-strokes-portada.png'} name={'La Cançó Dels Strokes - Retrats'} link='https://open.spotify.com/track/5qIMctLz6l24wBwwnDPB0O?si=9b2eb1b3a7f34e2d' />
           </GridItem>
 
-          <GridItem colSpan={2}>
+          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/sexenni-el-puma-portada.png'} name={'El Puma - Single'} link='https://open.spotify.com/album/57OjOMxljBzzop1lBUpVFQ?si=zBHIZ4iZQ6aTVyfBghzDIA' />
           </GridItem>
 
-          <GridItem colSpan={2}>
+          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/no-ho-sabia-portada.jpeg'} name={'No Ho Sabia - Single'} link='https://open.spotify.com/album/4t9XNHO9klYSOLxR3duOjP?si=kNCaZ0vuQy2sq803UknnHQ' />
           </GridItem>
 
