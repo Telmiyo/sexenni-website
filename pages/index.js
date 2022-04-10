@@ -30,7 +30,7 @@ const Page = () => {
 
         {/*HERO*/}
         { <Box
-          npw={'full'}
+          w={'full'}
           minHeight={500}
           backgroundImage={
             '/images/team/4.jpg'
