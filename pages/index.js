@@ -1,6 +1,5 @@
 import {
   Image,
-  Container,
   Heading,
   Link,
   Button,
@@ -8,7 +7,6 @@ import {
   Flex,
   SimpleGrid,
   useBreakpointValue,
-  Text,
 } from "@chakra-ui/react"
 import Layout from '../components/layouts/article'
 import {
