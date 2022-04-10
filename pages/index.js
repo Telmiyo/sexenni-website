@@ -30,7 +30,7 @@ const Page = () => {
         <Image src={'/images/team/4.jpg'} />
 
         {/*TICKET & SHOP*/}
-        <Heading mt={20} mb={10} as='h2' fontSize={'25'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
+        <Heading mt={20} mb={10} as='h2' textAlign='center' fontSize={'25'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
         <Link href='https://mutick.com/e/concert-presentacio-sexenni' target="_blank">
           <Button
             w={300}
@@ -41,7 +41,7 @@ const Page = () => {
             Aquí
           </Button>
         </Link>
-        <Heading mt={20} mb={10} as='h2' textTransform='uppercase' fontSize={'25'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
+        <Heading mt={20} mb={10} as='h2' textAlign='center' textTransform='uppercase' fontSize={'25'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
         <SimpleGrid
           direction="row"
           gap={15}
@@ -102,6 +102,7 @@ const Page = () => {
           mt={20}
           mb={10}
           flexGrow={2}
+          textAlign='center'
         >
           XARXES SOCIALS
         </Heading>
@@ -126,7 +127,7 @@ const Page = () => {
           </Link>
         </SimpleGrid>
         {/*CONTACT*/}
-        <Heading textTransform='uppercase' fontSize={25} color="red" my={10} as='h2'>contacte</Heading>
+        <Heading textAlign='center' textTransform='uppercase' fontSize={25} color="red" my={10} as='h2'>contacte</Heading>
         <SimpleGrid columns={[3, 3, 3]} spacing={5} align='center' mb={10}>
         <ContactGridItem src='/images/contents/logo-delirics.png' name='Discogràfica' mail='albert@delirics.cat'/>
         <ContactGridItem src='/images/contents/suricat-logo.png' name='Management' mail='carles@suricatmusic.cat'/>
