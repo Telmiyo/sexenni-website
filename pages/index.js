@@ -26,6 +26,7 @@ const Page = () => {
         flexFlow={'column nowrap'}
         flexAlign={'center'}
         alignItems="center"
+        mx={20}
       >
 
         {/*HERO*/}
@@ -72,7 +73,6 @@ const Page = () => {
         <Grid
           direction="row"
           gap={20}
-          mx={10}
           align='center'
         >
           <GridItem colSpan={1}>
@@ -107,7 +107,7 @@ const Page = () => {
         >
           Xarxes Socials
         </Heading>
-        <HStack mx={10} my={10} lignItems={'center'} flexGrow={1}>
+        <HStack my={10} lignItems={'center'} flexGrow={1}>
           {/*Instagram*/}
           <Link href="https://www.instagram.com/sexenni/" target="_blank">
             <Button _hover={{ bgGradient: 'linear(to-bl, pink.200 0%, #e3e3e3 95%)' }} variant="ghost" colorScheme={'black'} leftIcon={<Icon as={IoLogoInstagram} />}>

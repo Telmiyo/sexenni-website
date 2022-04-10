@@ -81,9 +81,9 @@ export const ProductGridItem = ({src, name, desc, link}) =>
 		<Link href={link} target="_blank">
 		<Button
 			variant="outline"
-            size="md"
 			colorScheme="black"
 			boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'	}
+			size="relative"
 		>
             Aconsegueix-la Aquí
 		</Button>
