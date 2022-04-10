@@ -42,7 +42,7 @@ const Page = () => {
         </Link>
 
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
-        <SimpleGrid  columns={[1,2]} spacing={5} mx={5} maxW= {useBreakpointValue({md:'50%',base:'100%'})}>
+        <SimpleGrid  columns={[1,1,2]} spacing={5} mx={5} maxW= {useBreakpointValue({md:'50%',base:'100%'})}>
           <ProductGridItem 
           src={'/images/contents/t-shirt-sexenni.jpeg'} 
           name={'Retrats - Negre'} 
@@ -62,7 +62,7 @@ const Page = () => {
           gap={15}
           align='center'
           mx={useBreakpointValue({md:'20px',base:'0px'})}
-          columns={[2,null,3]}
+          columns={[1,1,3]}
 
         >
             <DiscGridItem src={'/images/songs/retrats-portada.jpeg'} name={'Retrats - Nou Disc'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
