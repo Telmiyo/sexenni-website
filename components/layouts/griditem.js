@@ -5,13 +5,7 @@ import {
 	Link,
     Image,
     useBreakpointValue,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-    PopoverArrow,
-    PopoverCloseButton,
-    PopoverHeader,
-    PopoverBody,
+    Text,
 } from '@chakra-ui/react';
 
 export const DiscGridItem = ({src, name, link }) =>
@@ -55,7 +49,7 @@ export const DiscGridItem = ({src, name, link }) =>
 	</Box>
 )
 
-export const ProductGridItem = ({src, name }) =>
+export const ProductGridItem = ({src, name, desc, link}) =>
 (
 	<Box
 		w="full"
@@ -79,12 +73,12 @@ export const ProductGridItem = ({src, name }) =>
 				pos='relative'
 
 			/>
-			<Heading as="h2" my={4} color="black" fontSize='sm' fontFamily='body'>
+			<Heading as="h2" mt={4} color="black" fontSize='sm' fontFamily='body'>
 				{name}
 			</Heading>
+			<Text my={2} fontSize={10}>{desc}</Text>
 		</Box>
-        <Popover>
-            <PopoverTrigger>
+		<Link href={link} target="_blank">
 		<Button
 			variant="outline"
             size="md"
@@ -93,13 +87,6 @@ export const ProductGridItem = ({src, name }) =>
 		>
             Aconsegueix-la Aquí
 		</Button>
-        </PopoverTrigger>
-        <PopoverContent >
-            <PopoverArrow/>
-            <PopoverCloseButton/>
-            <PopoverHeader textColor={'white'}>Atenció!</PopoverHeader>
-        <PopoverBody textColor={'white'}>Per ara només estan disponibles als concerts. Compra les entrades <Link textColor='white' textDecor={'underline'} href='https://mutick.com/e/concert-presentacio-sexenni' target='_blank'>aquí</Link></PopoverBody>
-        </PopoverContent>
-        </Popover>
+		</Link>
 	</Box>
 )

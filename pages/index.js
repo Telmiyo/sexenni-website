@@ -1,4 +1,5 @@
 import {
+  Box,
   Heading,
   Link,
   Button,
@@ -6,6 +7,7 @@ import {
   Flex,
   HStack,
   Grid,
+  SimpleGrid,
   GridItem,
 } from "@chakra-ui/react"
 import Layout from '../components/layouts/article'
@@ -27,38 +29,45 @@ const Page = () => {
       >
 
         {/*HERO*/}
-        {/* <Box
-          w={'full'}
-          h={'100vh'}
-          mb={8}
+        { <Box
+          npw={'full'}
+          minHeight={500}
           backgroundImage={
             '/images/team/4.jpg'
           }
           backgroundSize={'cover'}
           backgroundPosition={'center'}
           backgroundColor="blackAlpha.300"
-          //flexBasis={'auto'}
-        //  display="flex"
-          //flexGrow={5}
           >
-        </Box> */}
+        </Box> }
         {/*TICKET & T-SHIRT*/}
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
         <Link href='https://mutick.com/e/concert-presentacio-sexenni' target="_blank">
           <Button
-          w={300}
-          variant="outline"
-          colorScheme='dark'
-          boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'}
+            w={300}
+            variant="outline"
+            colorScheme='dark'
+            boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'}
           >
             Aquí
           </Button>
         </Link>
 
-        <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>🚀 Noves Samarretes Disponibles </Heading>
-        <ProductGridItem src={'/images/contents/t-shirt-sexenni.jpeg'} name={'Retrats - Negre'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
+        <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
+        <SimpleGrid columns={2} gap={20} >
+          <ProductGridItem 
+          src={'/images/contents/t-shirt-sexenni.jpeg'} 
+          name={'Retrats - Negre'} 
+          desc="Per Ara estan disponible als concerts." 
+          link='https://mutick.com/e/concert-presentacio-sexenni'/>
+          <ProductGridItem 
+          src={'/images/songs/retrats-portada.jpeg'} 
+          name={'Retrats - CD'} 
+          desc= 'Disc físic de Retrats'
+          link='https://www.delirics.cat/es/producte/sexenni-retrats-es/' />
+        </SimpleGrid>
 
-            {/*DISCOGRAPHY*/}
+        {/*DISCOGRAPHY*/}
         <Heading mt={20} as='h2' fontSize={'xl'} textColor='red'>DISCOGRAFIA</Heading>
         <Grid
           direction="row"
