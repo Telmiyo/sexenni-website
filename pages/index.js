@@ -6,7 +6,6 @@ import {
   Icon,
   Flex,
   SimpleGrid,
-  GridItem,
   useBreakpointValue,
 } from "@chakra-ui/react"
 import Layout from '../components/layouts/article'
