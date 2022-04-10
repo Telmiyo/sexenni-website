@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Text} from '@chakra-ui/react'
+import { Box, Container, Stack, Text, Link} from '@chakra-ui/react'
 
 const Footer = () => {
 	return (
@@ -18,10 +18,10 @@ const Footer = () => {
 				alignItems="center"
 				justifyContent={'center'}
 			>
-				<Stack align="center" direction="row">
-
+				<Stack align="center" direction="column">
+		
 					<Text textColor="black" fontSize= 'sm'> All Right Reserved - Sexenni &copy; {new Date().getFullYear()}</Text>
-
+					<Text textColor="black" fontSize= '10'> Design By Telmo Beroiz - <Link textDecoration='underline' href="https://telmiyo-homepage.vercel.app/" target="_blank">telmoberoiz.xyz</Link></Text>
 				</Stack>
 			</Container>
 		</Box>
