@@ -42,7 +42,7 @@ const Page = () => {
         </Link>
 
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
-        <SimpleGrid columns={2} gap={20} >
+        <SimpleGrid columns={2} gap={5} mx={5}>
           <ProductGridItem 
           src={'/images/contents/t-shirt-sexenni.jpeg'} 
           name={'Retrats - Negre'} 
