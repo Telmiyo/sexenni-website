@@ -52,9 +52,9 @@ export const DiscGridItem = ({src, name, link }) =>
 export const ProductGridItem = ({src, name, desc, link}) =>
 (
 	<Box
-		w="full"
-		minHeight={useBreakpointValue({base:"50", md:"50px"})}
-		maxW="320px"
+		//w="full"
+		//minHeight={useBreakpointValue({base:"50", md:"50px"})}
+		//maxW="320px"
 		bg="white"
 		boxShadow='2xl'
 		rounded='lg'
@@ -81,11 +81,10 @@ export const ProductGridItem = ({src, name, desc, link}) =>
 		<Link href={link} target="_blank">
 		<Button
 			variant="outline"
-			colorScheme="black"
-			boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'	}
-			size="relative"
+			size="inherit"
+			colorScheme="blackAlpha.100"
 		>
-            Aconsegueix-la Aquí
+            Compralo
 		</Button>
 		</Link>
 	</Box>

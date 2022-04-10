@@ -1,12 +1,10 @@
 import {
-  Box,
+  Image,
   Heading,
   Link,
   Button,
   Icon,
   Flex,
-  HStack,
-  Grid,
   SimpleGrid,
   GridItem,
 } from "@chakra-ui/react"
@@ -26,21 +24,10 @@ const Page = () => {
         flexFlow={'column nowrap'}
         flexAlign={'center'}
         alignItems="center"
-        mx={20}
       >
 
         {/*HERO*/}
-        { <Box
-          w={'full'}
-          minHeight={500}
-          backgroundImage={
-            '/images/team/4.jpg'
-          }
-          backgroundSize={'cover'}
-          backgroundPosition={'center'}
-          backgroundColor="blackAlpha.300"
-          >
-        </Box> }
+        <Image src={  '/images/team/4.jpg' } />
         {/*TICKET & T-SHIRT*/}
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
         <Link href='https://mutick.com/e/concert-presentacio-sexenni' target="_blank">
@@ -70,7 +57,7 @@ const Page = () => {
 
         {/*DISCOGRAPHY*/}
         <Heading mt={20} as='h2' fontSize={'xl'} textColor='red'>DISCOGRAFIA</Heading>
-        <Grid
+        <SimpleGrid
           direction="row"
           gap={20}
           align='center'
@@ -94,7 +81,7 @@ const Page = () => {
             <DiscGridItem src={'/images/songs/no-ho-sabia-portada.jpeg'} name={'No Ho Sabia - Single'} link='https://open.spotify.com/album/4t9XNHO9klYSOLxR3duOjP?si=kNCaZ0vuQy2sq803UknnHQ' />
           </GridItem>
 
-        </Grid>
+        </SimpleGrid>
         {/*Social Links*/}
         <Heading
           textColor={'red'}
@@ -107,7 +94,7 @@ const Page = () => {
         >
           Xarxes Socials
         </Heading>
-        <HStack my={10} lignItems={'center'} flexGrow={1}>
+        <SimpleGrid columns={3}>
           {/*Instagram*/}
           <Link href="https://www.instagram.com/sexenni/" target="_blank">
             <Button _hover={{ bgGradient: 'linear(to-bl, pink.200 0%, #e3e3e3 95%)' }} variant="ghost" colorScheme={'black'} leftIcon={<Icon as={IoLogoInstagram} />}>
@@ -127,7 +114,7 @@ const Page = () => {
             </Button>
           </Link>
 
-        </HStack>
+        </SimpleGrid>
 
       </Flex>
     </Layout>
