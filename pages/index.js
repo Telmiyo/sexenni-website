@@ -30,7 +30,7 @@ const Page = () => {
         <Image src={'/images/team/4.jpg'} />
 
         {/*TICKET & SHOP*/}
-        <Heading mt={20} mb={10} as='h2' textAlign='center' fontSize={'25'} textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
+        <Heading mt={20} mb={10} as='h2' textAlign='center' fontSize={useBreakpointValue({base:'xl', md:'2xl'})}  textColor='red'>▼ ENTRADES CONCERT BCN 24/04▼</Heading>
         <Link href='https://mutick.com/e/concert-presentacio-sexenni' target="_blank">
           <Button
             w={300}
@@ -41,7 +41,7 @@ const Page = () => {
             Aquí
           </Button>
         </Link>
-        <Heading mt={20} mb={10} as='h2' textAlign='center' textTransform='uppercase' fontSize={'25'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
+        <Heading mt={20} mb={10} as='h2' textAlign='center' textTransform='uppercase' fontSize={useBreakpointValue({base:'xl', md:'2xl'})} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
         <SimpleGrid
           direction="row"
           gap={15}
