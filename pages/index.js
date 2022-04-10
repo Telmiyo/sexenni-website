@@ -61,8 +61,8 @@ const Page = () => {
           direction="row"
           gap={15}
           align='center'
-          mx={20}
-          columns={[1,null,4]}
+          mx={useBreakpointValue({md:'20px',base:'0px'})}
+          columns={[2,null,3]}
 
         >
             <DiscGridItem src={'/images/songs/retrats-portada.jpeg'} name={'Retrats - Nou Disc'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
