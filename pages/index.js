@@ -7,6 +7,7 @@ import {
   Flex,
   SimpleGrid,
   GridItem,
+  useBreakpointValue,
 } from "@chakra-ui/react"
 import Layout from '../components/layouts/article'
 import {
@@ -42,7 +43,7 @@ const Page = () => {
         </Link>
 
         <Heading mt={20} mb={10} as='h2' fontSize={'xl'} textColor='red'>🚀 Noves Samarretes Disponibles 🚀</Heading>
-        <SimpleGrid columns={2} gap={5} mx={5}>
+        <SimpleGrid  columns={[1,2]} spacing={5} mx={5} maxW= {useBreakpointValue({md:'50%',base:'100%'})}>
           <ProductGridItem 
           src={'/images/contents/t-shirt-sexenni.jpeg'} 
           name={'Retrats - Negre'} 
@@ -56,31 +57,20 @@ const Page = () => {
         </SimpleGrid>
 
         {/*DISCOGRAPHY*/}
-        <Heading mt={20} as='h2' fontSize={'xl'} textColor='red'>DISCOGRAFIA</Heading>
+        <Heading mt={20} as='h2' mb={10} fontSize={'xl'} textColor='red'>DISCOGRAFIA</Heading>
         <SimpleGrid
           direction="row"
-          gap={20}
+          gap={15}
           align='center'
+          mx={20}
+          columns={[1,null,4]}
+
         >
-          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/retrats-portada.jpeg'} name={'Retrats - Nou Disc'} link='https://open.spotify.com/album/76f31PpIcNFil6tmydPyFZ?si=Hp2ThZMtRBmHiokLCBLJYg' />
-          </GridItem>
-          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/sexenni-de-lao-portada.jpeg'} name={'De Lao - Retrats'} link='https://open.spotify.com/track/0TxI8urtmxp3i6mp4noOa0?si=e1632099d1a24899' />
-          </GridItem>
-
-          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/sexenni-la-canco-dels-strokes-portada.png'} name={'La Cançó Dels Strokes - Retrats'} link='https://open.spotify.com/track/5qIMctLz6l24wBwwnDPB0O?si=9b2eb1b3a7f34e2d' />
-          </GridItem>
-
-          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/sexenni-el-puma-portada.png'} name={'El Puma - Single'} link='https://open.spotify.com/album/57OjOMxljBzzop1lBUpVFQ?si=zBHIZ4iZQ6aTVyfBghzDIA' />
-          </GridItem>
-
-          <GridItem colSpan={1}>
             <DiscGridItem src={'/images/songs/no-ho-sabia-portada.jpeg'} name={'No Ho Sabia - Single'} link='https://open.spotify.com/album/4t9XNHO9klYSOLxR3duOjP?si=kNCaZ0vuQy2sq803UknnHQ' />
-          </GridItem>
-
         </SimpleGrid>
         {/*Social Links*/}
         <Heading
