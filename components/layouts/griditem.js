@@ -44,7 +44,7 @@ export const DiscGridItem = ({src, name, link }) =>
 			colorScheme="black"
 			boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'	}
 		>
-            Escoltar-la
+           <Text>Escoltar-la</Text> 
 		</Button>
         </Link>
 	</Box>
@@ -86,7 +86,7 @@ export const ProductGridItem = ({src, name, desc, link}) =>
 			colorScheme="black"
 			boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'	}
 		>
-            Comprar-la
+            <Text>Comprar-la</Text>
 		</Button>
         </Link>
 	</Box>
