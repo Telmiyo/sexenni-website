@@ -4,13 +4,15 @@ import {
     Box,
 } from '@chakra-ui/react'
 
+import LogoBox from "../components/logo"
+
 const Navbar = props => {
 
     return (
         <Box
             as="nav"
             w="100%"
-            bg="white"
+            bg="whiteAlpha.200"
             zIndex={1}
             position="fixed"
             alignItems="end"
@@ -26,7 +28,10 @@ const Navbar = props => {
                 justifyContent={'center'}
                 my={2}
             >
-                <Logo />
+                <LogoBox>
+                    <Logo />
+
+                </LogoBox>
             </Container>
         </Box>
     )

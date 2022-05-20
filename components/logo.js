@@ -2,20 +2,20 @@ import Link from "next/link";
 import {Image } from '@chakra-ui/react'
 import styled from "@emotion/styled";
 
-const LogoBox = styled.span`
+export const LogoBox = styled.span`
 display: inline-flex;
 
 &:hover img {
     transform: scale(1.5);
 }
 `
-const Logo = () => {
+const Logo = ({w = 150}) => {
   const logoImg = `/images/Logo_rojo.png`
   return (
     <Link href="/">
-        <LogoBox>
-          <Image src={logoImg} width="150px" alt="logo" />
-        </LogoBox>
+        
+          <Image src={logoImg} width={w} alt="logo" />
+       
     </Link>
   )
 }
