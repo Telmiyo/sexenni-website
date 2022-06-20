@@ -19,8 +19,6 @@ import { ContactGridItem, DiscGridItem, ProductGridItem } from "../components/gr
 
 import { ArrowDownIcon } from "@chakra-ui/icons"
 
-import Logo from "../components/logo"
-
 import Section from "../components/section"
 
 
@@ -49,7 +47,7 @@ const Page = () => {
         pt={400}
       >
 
-        <Logo w={700} />
+
         <Link href="#shop" >
         <Icon w={20} h={28} align="bottom" color="white" as={ArrowDownIcon} ></Icon>
         </Link>
