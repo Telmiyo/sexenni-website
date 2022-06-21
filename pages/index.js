@@ -1,7 +1,4 @@
 import {
-  VStack,
-  Stack,
-  Box,
   Heading,
   Link,
   Button,
@@ -16,8 +13,6 @@ import {
   DiscGridItem,
   ProductGridItem
 } from '../components/griditem'
-
-import { ArrowDownIcon } from '@chakra-ui/icons'
 
 import Carousel from '../components/carousel'
 
