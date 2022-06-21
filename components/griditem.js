@@ -29,11 +29,11 @@ export const DiscGridItem = ({src, name, link }) =>
 				size='xl'
 				src={src}
 				alt={name}
-				mb={4}
+
 				pos='relative'
 
 			/>
-			<Heading as="h2" my={4} color="black" fontSize='sm' fontFamily='body'>
+			<Heading as="h3" my={4} fontSize="lg" variant="heading3">
 				{name}
 			</Heading>
 		</Box>
@@ -44,7 +44,7 @@ export const DiscGridItem = ({src, name, link }) =>
 			colorScheme="black"
 			boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'	}
 		>
-           <Text>Escoltar-la</Text> 
+           <Text>Escoltar</Text> 
 		</Button>
         </Link>
 	</Box>
@@ -73,11 +73,12 @@ export const ProductGridItem = ({src, name, desc, link}) =>
 				mb={4}
 				pos='relative'
 
+
 			/>
-			<Heading as="h2" mt={4} color="black" fontSize='sm' fontFamily='body'>
+			<Heading as="h3" mt={4} fontSize='lg' variant="heading3">
 				{name}
 			</Heading>
-			<Text my={2} fontSize={10}>{desc}</Text>
+			<Text my={2} fontSize={14}>{desc}</Text>
 		</Box>
         <Link href={link} target="_blank">
 		<Button
@@ -86,7 +87,7 @@ export const ProductGridItem = ({src, name, desc, link}) =>
 			colorScheme="black"
 			boxShadow={'0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px -5px rgb(66 153 225 / 43%)'	}
 		>
-            <Text>Comprar-la</Text>
+            <Text>Comprar</Text>
 		</Button>
         </Link>
 	</Box>
@@ -96,7 +97,7 @@ export const ContactGridItem = ({src, name, mail}) =>
 (
 	<Box
 	w="full"
-	minHeight={useBreakpointValue({base:"50", md:"50px"})}
+	minHeight={useBreakpointValue({base:"50px", md:"50px"})}
 	maxW="320px"
 	bg="white"
 	rounded='lg'
@@ -114,12 +115,13 @@ export const ContactGridItem = ({src, name, mail}) =>
 				alt={name}
 				mb={4}
 				pos='relative'
+				shadow={"xl"}
 
 			/>
-			<Heading as="h2" mt={4} color="black" fontSize='sm' fontFamily='body'>
+			<Heading as="h3"  color="black" fontSize='sm' fontFamily='body' variant={"heading3"}>
 				{name}
 			</Heading>
-			<Text my={2} fontSize={10}>{mail}</Text>
+			<Text my={2} fontSize={14}>{mail}</Text>
 		</Box>
 	</Box>
 )

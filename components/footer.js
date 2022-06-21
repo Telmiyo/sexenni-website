@@ -20,8 +20,8 @@ const Footer = () => {
 			>
 				<Stack align="center" direction="column">
 		
-					<Text textColor="black" fontSize= 'sm'> All Right Reserved - Sexenni &copy; {new Date().getFullYear()}</Text>
-					<Text textColor="black" fontSize= '10'> Design By Telmo Beroiz - <Link textDecoration='underline' href="https://telmiyo-homepage.vercel.app/" target="_blank">telmoberoiz.xyz</Link></Text>
+					<Text textColor="black" fontSize= 'lg'> All Right Reserved - Sexenni &copy; {new Date().getFullYear()}</Text>
+					<Text textColor="black" fontSize= 'sm'> Design By Telmo Beroiz - <Link textDecoration='underline' href="https://telmiyo-homepage.vercel.app/" target="_blank">telmoberoiz.xyz</Link></Text>
 				</Stack>
 			</Container>
 		</Box>
