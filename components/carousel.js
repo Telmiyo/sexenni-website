@@ -4,14 +4,16 @@ import {
   IconButton,
   useBreakpointValue,
   Stack,
-  Heading,
-  Text,
+  // Heading,
+  // Text,
   Container,
+
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
+
 
 // Settings for the slider
 const settings = {
@@ -42,30 +44,30 @@ export default function CaptionCarousel() {
     {
       title: 'Sexenni',
       text:
-        "Despega",
+        "Pagina Oficial de Sexenni",
       image:
-        "/images/team/01.jpg",
+        "/images/team/01.jpeg",
     },
     {
       title: 'Sexenni',
       text:
         "",
       image:
-        '/images/team/02.jpg',
+        '/images/team/02.jpeg',
     },
      {
-      title: 'Sexenni',
-      text:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      // title: 'Sexenni',
+      // text:
+      //   "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
       image:
-        '/images/team/03.jpg',
+        '/images/team/03.jpeg',
     },
     {
-      title: 'Sexenni',
-      text:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image:
-        '/images/team/04.jpg',
+      // title: 'Sexenni',
+      // text:
+      //   "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+       image:
+        '/images/team/04.jpeg',
     },
   ];
 
@@ -125,7 +127,7 @@ export default function CaptionCarousel() {
             {/* This is the block you need to change, to customize the caption */}
             <Container size="container.lg" height="600px" position="relative">
               <Stack
-                spacing={6}
+                spacing={1}
                 w={'full'}
                 maxW={'lg'}
                 position="absolute"
@@ -133,12 +135,13 @@ export default function CaptionCarousel() {
                 transform="translate(0, -50%)"
   
                 >
-                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} color="white" textAlign={"center"} textTransform="uppercase">
+                  {/* <Image src="/images/contents/sexenni-logo-redondo.png" size/> */}
+                {/* <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} color="white" textAlign={"center"} textTransform="uppercase">
                   {card.title}
                 </Heading>
                 <Text fontSize={{ base: 'md', lg: 'lg' }} color="white" textAlign={"center"}>
                   {card.text}
-                </Text>
+                </Text> */}
               </Stack>
             </Container>
           </Box>
