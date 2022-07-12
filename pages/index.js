@@ -16,19 +16,12 @@ import {
 
 import Carousel from '../components/carousel'
 
-import Section from '../components/section'
-
 const Page = () => {
   return (
-    <Section>
-      <Flex flexFlow={'column nowrap'} flexAlign={'center'} alignItems="center">
+      <Flex flexFlow={'column nowrap'} alignItems="center">
       {/*HERO*/}
       {/* <Carousel /> */}
       <Carousel />
-        <Section
-          delay={0.1}
-          bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
-        ></Section>
         <Heading
           mt={20}
           mb={10}
@@ -209,7 +202,6 @@ const Page = () => {
           />
         </SimpleGrid>
       </Flex>
-    </Section>
   )
 }
 
