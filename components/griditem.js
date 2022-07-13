@@ -5,7 +5,6 @@ import {
 	Link,
     Image,
 	Avatar,
-    useBreakpointValue,
     Text,
 } from '@chakra-ui/react';
 
@@ -13,7 +12,7 @@ export const DiscGridItem = ({src, name, link }) =>
 (
 	<Box
 		w="full"
-		minHeight={useBreakpointValue({base:"50", md:"50px"})}
+		minHeight={{base:"50", md:"50px"}}
 		maxW="320px"
 		bg="white"
 		boxShadow='2xl'
@@ -54,7 +53,7 @@ export const ProductGridItem = ({src, name, desc, link}) =>
 (
 	<Box
 	w="full"
-	minHeight={useBreakpointValue({base:"50", md:"50px"})}
+	minHeight={{base:"50", md:"50px"}}
 	maxW="320px"
 	bg="white"
 	boxShadow='2xl'
@@ -97,7 +96,7 @@ export const ContactGridItem = ({src, name, mail}) =>
 (
 	<Box
 	w="full"
-	minHeight={useBreakpointValue({base:"50px", md:"50px"})}
+	minHeight={{base:"50px", md:"50px"}}
 	maxW="320px"
 	bg="white"
 	rounded='lg'

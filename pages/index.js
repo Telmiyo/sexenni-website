@@ -5,7 +5,6 @@ import {
   Icon,
   Flex,
   SimpleGrid,
-  useBreakpointValue
 } from '@chakra-ui/react'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoYoutube } from 'react-icons/io5'
 import {
@@ -20,13 +19,12 @@ const Page = () => {
   return (
       <Flex flexFlow={'column nowrap'} alignItems="center">
       {/*HERO*/}
-      {/* <Carousel /> */}
       <Carousel />
         <Heading
           mt={20}
           mb={10}
           as="h2"
-          fontSize={useBreakpointValue({ base: 'lg', md: '4xl'})}
+          // fontSize={useBreakpointValue({ base: 'lg', md: '4xl'})}
           variant={"heading2"}
         >
           🚀 Noves Samarretes Disponibles 🚀
@@ -36,7 +34,7 @@ const Page = () => {
           direction="row"
           gap={15}
           align="center"
-          mx={useBreakpointValue({ md: '20px', base: '0px' })}
+          mx={{ md: '20px', base: '1px' }}
           columns={[1, 1, 3]}
         >
           <ProductGridItem
@@ -72,7 +70,7 @@ const Page = () => {
         </SimpleGrid>
 
         {/*DISCOGRAPHY*/}
-        <Heading mt={20} as="h2" mb={10}   fontSize={useBreakpointValue({ base: 'xl', md: '4xl' })} variant="heading2">
+        <Heading mt={20} as="h2" mb={10}   fontSize={{ base: 'xl', md: '4xl' }} variant="heading2">
           DISCOGRAFIA
         </Heading>
         <SimpleGrid
@@ -80,7 +78,7 @@ const Page = () => {
           direction="row"
           gap={15}
           align="center"
-          mx={useBreakpointValue({ md: '20px', base: '0px' })}
+          mx={{ md: '20px', base: '0px' }}
           columns={[1, 1, 3]}
         >
           <DiscGridItem
@@ -118,7 +116,7 @@ const Page = () => {
         {/*Social Links*/}
         <Heading
           id="xarxes-socials"
-          fontSize={useBreakpointValue({ base: 'xl', md: '4xl' })}
+          fontSize={{ base: 'xl', md: '4xl' }}
           variant="heading2"
           display="flex"
           mt={20}
@@ -171,7 +169,7 @@ const Page = () => {
         </SimpleGrid>
         {/*CONTACT*/}
         <Heading
-          fontSize={useBreakpointValue({ base: 'xl', md: '4xl' })}
+          fontSize={{ base: 'xl', md: '4xl' }}
           variant="heading2"
           mt={10}
           as="h2"
