@@ -1,8 +1,8 @@
 import React from 'react';
 import {
   Box,
-  IconButton,
-  useBreakpointValue,
+  // IconButton,
+  // useBreakpointValue,
   Stack,
   // Heading,
   // Text,
@@ -10,7 +10,7 @@ import {
 
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+// import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
 
@@ -31,12 +31,12 @@ const settings = {
 export default function CaptionCarousel() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = React.useState(null);
+  // const [slider, setSlider] = React.useState(null);
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '40px' });
+  // const top = useBreakpointValue({ base: '90%', md: '50%' });
+  // const side = useBreakpointValue({ base: '30%', md: '40px' });
 
   // This list contains all the data for carousels
   // This can be static or loaded from a server
@@ -90,7 +90,8 @@ export default function CaptionCarousel() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       {/* Left Icon */}
-      <IconButton
+      
+      {/* <IconButton
         aria-label="left-arrow"
         variant="ghost"
         position="absolute"
@@ -99,9 +100,9 @@ export default function CaptionCarousel() {
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}>
-        <BiLeftArrowAlt size="40px" />
+        <IoArrowBackOutline size="40px" />
       </IconButton>
-      {/* Right Icon */}
+      
       <IconButton
         aria-label="right-arrow"
         variant="ghost"
@@ -111,8 +112,8 @@ export default function CaptionCarousel() {
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt size="40px" />
-      </IconButton>
+        <IoArrowForwardOutline size="40px" />
+      </IconButton> */}
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
@@ -135,7 +136,6 @@ export default function CaptionCarousel() {
                 transform="translate(0, -50%)"
   
                 >
-                  {/* <Image src="/images/contents/sexenni-logo-redondo.png" size/> */}
                 {/* <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} color="white" textAlign={"center"} textTransform="uppercase">
                   {card.title}
                 </Heading>
